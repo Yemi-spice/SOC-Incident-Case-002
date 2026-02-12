@@ -32,3 +32,15 @@ Indicators:
 - Same username
 - Same source host
 - Short time window
+
+
+## Privilege Abuse & Account Manipulation
+
+Actions performed after authentication failures:
+
+- 4672: Admin session initiated
+- 4732: User added to Administrators
+- 4733: User removed from Administrators
+- 4726: Account deleted
+
+This sequence simulates insider misuse or attacker cleanup behavior.
