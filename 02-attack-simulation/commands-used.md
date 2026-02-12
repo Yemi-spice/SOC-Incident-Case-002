@@ -12,3 +12,23 @@ Commands:
 Expected Events:
 - 4720 (User created)
 - 4732 (Added to Administrators group)
+
+
+## Brute Force Authentication Attempts
+
+Simulated password guessing against a low-privilege account.
+
+Target Account:
+- attacker_sim
+
+Technique:
+- Repeated failed RUNAS attempts
+
+Expected Events:
+- 4625 (Failed logon)
+
+Indicators:
+- Repeated failures
+- Same username
+- Same source host
+- Short time window
